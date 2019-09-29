@@ -8,6 +8,6 @@ func(customError CustomError) Error() string  {
 	return customError.msg
 }
 
-func New(msgText string) *CustomError {
-	return &CustomError{msg: msgText}
+func New(msgText string) CustomError {
+	return CustomError{msg: msgText}
 }
